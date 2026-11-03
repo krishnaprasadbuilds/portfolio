@@ -124,7 +124,39 @@ cursor: none;
 color: black;
 
 }
+/* project section */
+.Projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.Projects img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Projects .project1 a, .Projects .project2 a, .Projects .project3 a {
+    display: block;
+    cursor: pointer;
+}
+
+.project1 img, project2 img, project3 img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project1 img:hover, project2 img:hover, project3 img:hover {
+    transform: scale(1.05);
+}
 /* Skills Section */
 #skills {
   margin-top: 10px;
@@ -222,7 +254,7 @@ color: black;
 
 @media (max-width: 1024px) and (min-width: 270px){
   .intro {
-    flex-direction: column';
+    flex-direction: column;
 	  justify-content: flex-end;
     text-align: center;
   }
@@ -283,4 +315,5 @@ color: black;
   .aboutMe .p{
     display: none;
   }
+}
 }
